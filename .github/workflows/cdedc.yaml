@@ -2,17 +2,18 @@ name: Practicing YAML
 on:
   push:
 jobs:
-  jobsname: importing
-  runs-on: ubuntu-latest
-  steps:
+  IMPORTING:
+    runs-on: ubuntu-latest
+    
+    steps:
 
-  - name: UPLOADING THE FUCKING CODE
-    uses : actions/checkout@v4
-  - name : INSTALLING PYTHON
-    uses : actions/setup-python@v5
-    with :
-      python-version : '3.12'
-  - name : RUN TESTS
-    run : python testcode.py
-  - name : PRINT MESSAGE
-    run : echo  " DEPLOYING SUCCESS"
+    - name: UPLOADING THE FUCKING CODE
+      uses : actions/checkout@v4
+    - name : INSTALLING PYTHON
+      uses : actions/setup-python@v5
+      with :
+        python-version : '3.12'
+    - name : RUN TESTS
+      run : python testcode.py
+    - name : PRINT MESSAGE
+      run : echo  " DEPLOYING SUCCESS"
