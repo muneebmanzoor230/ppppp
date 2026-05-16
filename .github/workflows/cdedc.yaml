@@ -2,8 +2,8 @@ name: Practicing YAML
 on:
   push:
 jobs:
-  jobsname: IMPORTING
-  runs-on: ubuntu latest
+  jobsname: importing
+  runs-on: ubuntu-latest
   steps:
 
   - name: UPLOADING THE FUCKING CODE
